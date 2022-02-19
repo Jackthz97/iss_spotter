@@ -1,5 +1,6 @@
 const request = require('request-promise-native');
 
+// promise chain
 const nextISSTimesForMyLocation = function() {
   return fetchMyIP()
     .then(fetchCoordsByIP)
